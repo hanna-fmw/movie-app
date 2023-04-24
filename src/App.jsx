@@ -9,7 +9,7 @@ function App() {
 	const [search, setSearch] = useState('')
 
 	function getApiData(title) {
-		fetch(`http://omdbapi.com/?apikey=15d1e0a0&s=${title}`)
+		fetch(`https://omdbapi.com/?apikey=15d1e0a0&s=${title}`)
 			.then((res) => res.json())
 			.then((data) => {
 				console.log(data)
